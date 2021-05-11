@@ -1,0 +1,140 @@
+/* 
+1- font initalization
+2- generic classes
+3- root setcion (variables)
+4- header
+5- Owl Carousel section
+
+*/
+/* start font initilization */
+@font-face {
+    font-family: 'cairo';
+    src: url('../assets/fonts/cairo/Cairo-Regular.eot');
+    src: url('../assets/fonts/cairo/Cairo-Regular.eot?#eifix')format('embedded-opentype'),
+    url('../assets/fonts/cairo/Cairo-Regular.woff')format('woff'),
+    url('../assets/fonts/cairo/Cairo-Regular.woff2')format('woff2'),
+    url('../assets/fonts/cairo/Cairo-Regular.ttf')format('truetype'),
+    url('../assets/fonts/cairo/Cairo-Regular.svg') format('svg');
+}
+/* end font initilization */
+
+/* start root section */
+:root {
+    --main-color: #c4398c;
+    --white-color: #eee;
+    --transition: all 0.4s linear;
+    --cairofont: "cairo";
+  }
+/* end root section */
+
+/* start generic classes */
+h1,h2,h3{
+    font-family: var(--cairofont);
+}
+body{
+    margin: 0px;
+}
+
+/* end generic classes */
+
+/* start Header Section */
+.upper-nav{
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+.upper-nav .col-6{
+    padding: 0px;
+}
+.upper-nav__links{
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+.upper-nav a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.upper-nav a:hover{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.upper-nav__links{
+    display: flex;
+    align-items: center;
+}
+.upper-nav__links  a{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left:8px;
+}
+.upper-nav__info{
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+.upper-nav__info >a{
+    padding: 52px;
+}
+.lower-nav{
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+}
+.lower-nav .row{
+    align-items: center;
+}
+.lower-nav a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: var(--cairofont);
+}
+.lower-nav a:first-child{
+    color: var(--main-color);
+}
+.lower-nav a:first-child:hover{
+    color: var(--main-color);
+}
+.lower-nav a:hover{
+    text-decoration: none;
+    color: black;
+}
+.lower-nav__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lower-nav__logo img{
+    width: 300px;
+    padding: 10px;
+}
+/* end Header Section */
+/* start Owl Carousel section */
+.owl-carousel{
+    /* background-image: url(../assets/images/backgrounds/new.jpg); */
+    height: 100%;
+}
+.first-slide{
+    height: 100%;
+    background-image: url(../assets/images/backgrounds/new.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 450px;
+}
+.first-slide h1{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 56px;
+}
+.first-slide img{
+    visibility: hidden;
+}
+/* end Owl Carousel section */
